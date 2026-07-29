@@ -1,5 +1,23 @@
-/* Global styles for MygkpasS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    /* Light gray background to make the stark white/colorful cards pop */
+    background-color: #f4f4f5; 
+    color: #000000;
+    /* Clean, modern, system-default sans-serif font */
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  /* Custom Neo-Brutalist text selection (highlighting text turns it bold yellow) */
+  ::selection {
+    background-color: #facc15; /* yellow-400 */
+    color: #000000;
+  }
+}
