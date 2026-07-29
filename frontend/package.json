@@ -9,11 +9,13 @@
     "start": "next start",
     "lint": "next lint"
   },
+  
   export default {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
   },
+
 };
   "dependencies": {
     "@supabase/supabase-js": "^2.39.8",
